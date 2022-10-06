@@ -1,12 +1,14 @@
-#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ❯ SpotifyMediaCompiler ❮ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ❯ SpotifyMediaCompiler - Created by sirnoob_1#0001 ❮ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 '''
-   _____       _ _            _____           _ _               _____ _____
-  / ____|     (_) |          |  __ \         | (_)        /\   |  __ \_   _|
- | (___   __ _ _| | ___  _ __| |__) |__ _  __| |_  ___   /  \  | |__) || |
-  \___ \ / _` | | |/ _ \| '__|  _  // _` |/ _` | |/ _ \ / /\ \ |  ___/ | |
-  ____) | (_| | | | (_) | |  | | \ \ (_| | (_| | | (_) / ____ \| |    _| |_
- |_____/ \__,_|_|_|\___/|_|  |_|  \_\__,_|\__,_|_|\___/_/    \_\_|   |_____|
+   _____             _   _  __       __  __          _ _        _____                      _ _           
+  / ____|           | | (_)/ _|     |  \/  |        | (_)      / ____|                    (_) |          
+ | (___  _ __   ___ | |_ _| |_ _   _| \  / | ___  __| |_  __ _| |     ___  _ __ ___  _ __  _| | ___ _ __ 
+  \___ \| '_ \ / _ \| __| |  _| | | | |\/| |/ _ \/ _` | |/ _` | |    / _ \| '_ ` _ \| '_ \| | |/ _ \ '__|
+  ____) | |_) | (_) | |_| | | | |_| | |  | |  __/ (_| | | (_| | |___| (_) | | | | | | |_) | | |  __/ |   
+ |_____/| .__/ \___/ \__|_|_|  \__, |_|  |_|\___|\__,_|_|\__,_|\_____\___/|_| |_| |_| .__/|_|_|\___|_|   
+        | |                     __/ |                                               | |                  
+        |_|                    |___/                                                |_|                  
 '''
 
 #━━━━━━━━━━━━━━━━━━━━━━━ ❯ SpotifyMediaCompiler Imports ❮ ━━━━━━━━━━━━━━━━━━━━━━━
@@ -24,7 +26,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 #-Spotipy-
 spotifyClient = spotipy.Spotify(
-    client_credentials_manager = SpotifyClientCredentials(
+    client_credentials_manager = SpotifyClientCredentials( #- Head to developer.spotify.com and register API credentials
         client_id='CLIENTID',
         client_secret='CLIENTSECRET'
         )
@@ -83,7 +85,7 @@ def get_filtered_api_response(songArtist: str, songTitle: str) -> dict or list:
     if searchResults['tracks']['items'] == []: #- Checking for a valid response, if it is a poor response this list is returned
         print(f'({datetime.datetime.now().strftime("%d/%m/%y %H:%M:%S")}) [INFO] [GFAR] [FAILED] [{round(finishTime, 3)}s] Query ({songArtist} - {songTitle}) [RESPONSE] (Failed to locate song matching query)')
 
-        return [songArtist, songTitle, 'https://i.imgur.com/aEZDHey.png', None]
+        return [songArtist, songTitle, 'https://i.imgur.com/h1bT9lD.png', None] #- returning failed prefixes. You can edit List[2] to a custom image to display
 
     else:
         print(f'({datetime.datetime.now().strftime("%d/%m/%y %H:%M:%S")}) [INFO] [GFAR] [SUCCESS] [{round(finishTime, 3)}s] Query ({songArtist} - {songTitle}) [RESPONSE] (' + searchResults['tracks']['items'][0]['external_urls']['spotify'] + ')')
@@ -106,7 +108,7 @@ def fill_response_list():
 
 
     #-Fetching SailorRadio API's Song Data-
-    stationData = requests.get('https://oreo.truckstopradio.co.uk/api/nowplaying/1')
+    stationData = requests.get('STATION LINK')
     stationData = stationData.json()
 
     #-Searching Spotify API for song
@@ -242,9 +244,6 @@ def update_response_data():
 update_response_data()
 
 '''
-Call update_response_data() to automatically update the 'cache' and to futurely update times. The function handles
-jingles and maintains the old list when azura updates the nowplaying with a jingle
-
-If and when the webserver restarts the jingles may show if a presenter is live, but this will go within 25 minutes and work as intended..
-Not a bug worth fixing'''
-
+Call update_response_data() to automatically update the 'cache' and updates in the future. The function handles
+jingles and maintains the old list when azura updates the nowplaying. Run constantly to maintain data.
+'''

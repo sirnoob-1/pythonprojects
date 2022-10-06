@@ -22,6 +22,7 @@ Step 4) Running the file
 ```
 - Line 28 (Change to your spotify client id)
 - Line 29 (Change to your spotify client secret)
+- Line 111 (Change to your station IP with the endpoint '/api/nowplaying/{1, or applicable station number}
 - Line 193 (Change to the prefix of your jingles to filter them out of the data)
 ```
 --
@@ -33,3 +34,8 @@ Step 4) Running the file
 ## Contact Me
 If you're having issues running this application, let me know!
 - Discord: [sirnoob_1#0001](https://discord.com/users/304333708599754753)
+- Email: [tom.chetwynd@outlook.com](mailto:tom.chetwynd@outlook.com)
+
+
+
+Thanks for using my software! 🤗🤗
