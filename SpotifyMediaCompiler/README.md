@@ -1,6 +1,6 @@
 # Getting Started
 
-### The Spotify Media Compiler is designed for Azuracast or Icecast supporting servers only, and can be ran in multiple ways, I would recommend knowledge on how you are going to implement it before continuing. For this example, let's keep it simple.
+### The Spotify Media Compiler is designed for Azuracast or Icecast supporting servers only, and can be ran in multiple ways. I would recommend knowledge on how you are going to implement it before continuing. For this example, let's keep it simple and run the application by itself.
 
 ---
 ## Installation Brief
