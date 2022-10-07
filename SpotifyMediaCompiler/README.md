@@ -27,7 +27,7 @@ Step 4) Running the file
 ```
 --
 ## Step 4) Running
-### The file can be ran on Windowsusing either [Visual Studio Code IDE](https://code.visualstudio.com/) or [Python for Windows](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5). 
+### The file can be ran on Windows using either [Visual Studio Code IDE](https://code.visualstudio.com/) or [Python for Windows](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5). 
 ### To run this file on Linux or Mac, please view alternative guides.
 <br></br>
 
@@ -36,6 +36,6 @@ If you're having issues running this application, let me know!
 - Discord: [sirnoob_1#0001](https://discord.com/users/304333708599754753)
 - Email: [tom.chetwynd@outlook.com](mailto:tom.chetwynd@outlook.com)
 
-
+Please do not distribute this software, or any on my profile, without reference or contacting me prior.
 
 Thanks for using my software! 🤗🤗
