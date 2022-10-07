@@ -14,8 +14,8 @@ Step 4) Running the file
 ## Step 1) Downloading
 ### To download the file, head to the github page and click 'Download'
 --
-## Step 2) Moving
-### Make sure the file is out of any busy directories, moving it to an empty folder will help to improve the performance
+## Step 2) Relocating
+### Make sure the file is out of any busy directories, moving it to an empty folder will help to improve the performance and prevent any errors
 --
 ## Step 3) Editing Variables
 ### In order for the file to run, you must edit the corresponding data areas.
